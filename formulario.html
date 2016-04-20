@@ -14,7 +14,7 @@ and open the template in the editor.
         <h1>Datos personales<br></h1>
     </center>
     <div>
-  <FORM>
+  <FORM method="post" action="prueba1.php">
 
 <CENTER>
 <TABLE border="0">
@@ -22,31 +22,32 @@ and open the template in the editor.
 <TR>
    <TD>Nombre:</TD> 
    <TD> <INPUT TYPE="text"  SIZE=18 MAXLENGTH=18 name="nombre">   
-       F.Nac.: <INPUT TYPE="text"  SIZE=10 MAXLENGTH=10 name=""> 
-       DNI:    <INPUT TYPE="text"  SIZE=12 ></TD>
+       F.Nac.: <INPUT TYPE="text"  SIZE=10 MAXLENGTH=10 name="fnacimiento"> 
+       DNI:    <INPUT TYPE="text"  SIZE=12 name="dni"></TD>
 
 <TR>
    <TD>Apellidos:</TD>
-   <TD> <INPUT TYPE="text"  SIZE=48 MAXLENGTH=48></TD>
+   <TD> <INPUT TYPE="text"  SIZE=48 MAXLENGTH=48 name="apellidos"></TD>
 
 <TR>
    <TD>Calle y número:</TD>
-   <TD> <INPUT TYPE="text"  SIZE=48 MAXLENGTH=48></TD>
+   <TD> <INPUT TYPE="text"  SIZE=48 MAXLENGTH=48 name="calle"></TD>
 
 <TR>
   <TD>Código Postal:</TD>
-  <TD> <INPUT TYPE="text"  SIZE=5 MAXLENGTH=5>
-      Ciudad: <INPUT TYPE="text"  SIZE=36 MAXLENGTH=36></TD>
+  <TD> <INPUT TYPE="text"  SIZE=5 MAXLENGTH=5 name="cp">
+      Ciudad: <INPUT TYPE="text"  SIZE=36 MAXLENGTH=36 name="ciudad"></TD>
 
 <TR>
    <TD>Provincia: </TD>
-   <TD> <INPUT TYPE="text"  SIZE=20 MAXLENGTH=20> 
-      Teléfono: <INPUT TYPE="text"  SIZE=19 MAXLENGTH=19></TD>
+   <TD> <INPUT TYPE="text"  SIZE=20 MAXLENGTH=20 name="provincia"> 
+      Teléfono: <INPUT TYPE="text"  SIZE=19 MAXLENGTH=19 name="telefono"></TD>
 
 <TR>
    <TD>Ocupación:</TD>
    <TD> <SELECT name="ocupacion">
-		<OPTION VALUE="estudiante">Estudiante</OPTION>
+                <OPTION VALUE=""></OPTION>
+                <OPTION VALUE="estudiante">Estudiante</OPTION>
 		<OPTION VALUE="empleado">Trabajador por cuenta ajena</OPTION>
 		<OPTION VALUE="autonomo">Autonomo</OPTION>
 		<OPTION VALUE="jubilado">Jubilado</OPTION>
@@ -56,7 +57,7 @@ and open the template in the editor.
 
 <TR>
    <TD>Comentarios<BR> personales:</TD>
-   <TD> <TEXTAREA rows="5" cols="48"  ></TEXTAREA></TD>
+   <TD> <TEXTAREA rows="5" cols="48" name="comentario"></TEXTAREA></TD>
 
 <TR>
    <TD><B>Pulse aquí:</B></TD>
