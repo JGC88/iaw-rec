@@ -38,7 +38,7 @@ if ($_POST) {
     if ($dni==""){
         echo "No ha introducido ningun DNI."."<br/>";
      }else {
-         echo "DNI: " .$dni. "<br/>";
+         echo "DNI: " .$dni. " ";
      }
 }
 
@@ -47,7 +47,7 @@ function letra_nif($dni) {
     }
  
     $numero = $dni;
-    echo 'La letra NIF del DNI "'.$numero.'" es "'.letra_nif($numero).'"<br/>';
+    echo ' --    La letra NIF del DNI "'.$numero.'" es "'.letra_nif($numero).'"<br/>';
 
 if ($_POST) {
     if ($apellidos==""){
